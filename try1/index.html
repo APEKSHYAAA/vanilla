@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">
+        
+    </script>
+    <style>
+        
+        #box1, #box3 {
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        #box2 {
+            transform: scale(1.2); 
+            z-index: 20; 
+            opacity: 0.7; 
+        }
+    </style>
+    <title>Transition</title>
+</head>
+<body>
+    <div class="outerbox">
+        <div id="box1" class="inner_box_flex">
+            <div class="top_box"></div>
+            <div class="bottom_flex">
+                <div class="left_flex">
+                    <div class="profile">1</div>
+                </div>
+                <div class="right_flex">
+                    <div class="bottom_top_flex"></div>
+                    <div class="bottom_bottom_flex"></div>
+                </div>
+            </div>
+        </div>
+        <div id="box2" class="inner_box_flex" onclick="toggleAnimation()">
+            <div class="top_box"></div>
+            <div class="bottom_flex">
+                <div class="left_flex">
+                    <div class="profile">2</div>
+                </div>
+                <div class="right_flex">
+                    <div class="bottom_top_flex"></div>
+                    <div class="bottom_bottom_flex"></div>
+                </div>
+            </div>
+        </div>
+        <div id="box3" class="inner_box_flex">
+            <div class="top_box"></div>
+            <div class="bottom_flex">
+                <div class="left_flex">
+                    <div class="profile">3</div>
+                </div>
+                <div class="right_flex">
+                    <div class="bottom_top_flex"></div>
+                    <div class="bottom_bottom_flex"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
